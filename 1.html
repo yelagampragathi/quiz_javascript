@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZZ</title>
+    <script>
+        function result1()
+        {
+            var ele=document.getElementsByName('capital');
+            for(i=0;i<ele.length;i++)
+            {
+            if(ele[i].checked)
+            {
+                if(ele[i].value=="Delhi")
+                {
+            document.getElementById("res").innerHTML="<font color=green>Correct</font>";
+                }
+            else
+            {
+                document.getElementById("res").innerHTML="<font color=red>Incorrect</font>";
+            }
+        }
+      }
+     }   
+       
+    </script>
+</head>
+<body>
+   
+<p>1.What is the capital of india?</p>
+<input type="radio" name="capital" value="Delhi">Delhi<br>
+<input type="radio" name="capital" value="Bangalore">Bangalore<br>
+<input type="radio" name="capital" value="Telangana">Telangana<br>
+<input type="radio" name="capital" value="Mumbai">Mumbai<br>
+<input type="button" value="submit" onclick="result1()">
+<div id="res"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZZ</title>
+    <script>
+        function result4()
+        {
+            var ele=document.getElementsByName('vow');
+            for(i=0;i<ele.length;i++)
+            {
+            if(ele[i].checked)
+            {
+                if(ele[i].value=="6")
+                {
+            document.getElementById("resul").innerHTML="<font color=green>Correct</font>";
+                }
+            else
+            {
+                document.getElementById("resul").innerHTML="<font color=red>Incorrect</font>";
+            }
+        }
+      }
+     }            
+    </script>
+</head>
+<body>
+    <p>4.3+2+1=?</p>
+<input type="radio" name="vow" value="3">3<br>
+<input type="radio" name="vow" value="5">5<br>
+<input type="radio" name="vow" value="6">6<br>
+<input type="radio" name="vow" value="7">7<br>
+<input type="button" value="submit" onclick="result4()">
+<div id="resul"></div>
+</body>
+</html>
